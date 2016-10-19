@@ -19,11 +19,11 @@ A docker image can be built with the command
 ##Install and Run
 Start the docker container with the command
 
-    $ docker run -d -p 6311:6311 bde2020/pilot-sc4-rserve:latest 
+    $ docker run --rm -d -p 6311:6311 --name rserve bde2020/pilot-sc4-rserve:latest 
 
 This starts a container with R and Rserve installed. In order to start Rserve run the command
 
-    $ docker exec -d <container> ./start_rserve.sh
+    $ docker exec -d rserve ./start_rserve.sh
 
 where <container> is a place holder for the container name or id. The Rserve will listen to the default port (6311).
 The port can be changed in the Rserve.conf file. The same port number must be used in the Docker file (EXPOSE) and when 

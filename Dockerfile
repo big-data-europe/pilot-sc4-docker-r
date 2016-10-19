@@ -5,7 +5,7 @@
 # 1) Build an image using this docker file. Run the following docker command
 # docker build -t bde2020/pilot-sc4-rserve:latest .
 # 2) Run a container with Rserve. Run the following docker command
-# docker run -p 6311:6311 bde2020/pilot-sc4-rserve:latest
+# docker run --rm -p 6311:6311 --name reserve bde2020/pilot-sc4-rserve:latest
 # Use -d to start the service as a daemon (docker run -d -p 6311:6311 bde202/pilot-sc4-rserve )
  
 # Pull base image
