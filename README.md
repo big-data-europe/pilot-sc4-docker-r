@@ -19,7 +19,7 @@ A docker image can be built with the command
 ##Install and Run
 Start the docker container with the command
 
-    $ docker run --rm -d -p 6311:6311 --name rserve bde2020/pilot-sc4-rserve:latest 
+    $ docker run -d -p 6311:6311 --name rserve bde2020/pilot-sc4-rserve:latest 
 
 This starts a container with R and Rserve installed. In order to start Rserve run the command
 
