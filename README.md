@@ -1,9 +1,9 @@
 Docker-R 
 ========
 Builds a Docker image with R and Rserve. It contains also the R scripts with the definition of the functions for 
-the map matching and a small sample of the road network of city of Thessaloniki, Greece, in the shape file format.
-The map matching algorithm is used to map the position of a device given as a (longitude, latitude) pair to a street. 
-The geographical data is extracted from OpenStreetMap. A new version of this software which includes the PostGis and 
+the map matching and a small sample of the road network of the city of Thessaloniki, Greece, in the shape file format.
+The map matching algorithm is used to map the position of a device given as a longitude, latitude pair to a street. 
+The geographical data is extracted from OpenStreetMap. A new version of this software which includes PostGis and 
 the full road network of Thessaloniki is available in [pilot-sc4-postgis](https://github.com/big-data-europe/pilot-sc4-postgis). 
 
 ## Description
