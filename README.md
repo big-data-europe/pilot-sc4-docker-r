@@ -2,7 +2,7 @@ Docker-R
 ========
 Builds a Docker image with R and Rserve. It contains also the R scripts with the definition of the functions for the map matching.
 The map matching algorithm is used to map the position of a device given as a (longitude, latitude) pair to a street. The geographical
-data, extracted from OpenStreetMap, is also added to the image. The area covered is the city of Thessaloniki, Greece. 
+data, extracted from OpenStreetMap, is also added to the image. The area covered is the city of Thessaloniki, Greece. A new version of this software which includes the PostGis and the full road network of Thessaloniki from OpenStreetMap is available in [pilot-sc4-postgis](https://github.com/big-data-europe/pilot-sc4-postgis). 
 
 ## Description
 This component executes remotely R commands from a Java application. It is used in the BDE - SC4 Pilot to execute a map matching algorithm 
@@ -28,9 +28,8 @@ This starts a container with R and Rserve installed. In order to start Rserve ru
 
     $ docker exec -d rserve ./start_rserve.sh
 
-where <container> is a place holder for the container name or id. The Rserve will listen to the default port (6311).
-The port can be changed in the Rserve.conf file. The same port number must be used in the Docker file (EXPOSE) and when 
-the container is started.
+The Rserve will listen to the default port (6311). The port can be changed in the Rserve.conf file. 
+The same port number must be used in the Docker file (EXPOSE) and when the container is started.
 
 ## Usage 
 This component provides a map matching service based on R, Rserve and some R functions. It can be used by an Rserve client embedded in a java application.
